@@ -1,0 +1,21 @@
+import turtle 
+
+def drawsquare(t, sz):
+    for i in ['red', 'Black', 'pink', "white"]:
+              t.color(i)
+              t.forward(sz)
+              t.right(90)
+        
+tess = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+drawsquare(tess, 50)
+
+size = 20
+for r in range(15):
+    drawsquare(tess, size)
+    size = size + 20
+    tess.forward(10)
+    tess.right(18)
+    
+wn.exitonclick()
